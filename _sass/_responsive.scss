@@ -1,7 +1,30 @@
-@media (max-width: 1200px) 
+@media (max-width: 120rem) 
 {
 	.container
 	{
 		width: 100%;
 	}
+
+	.nav-bar 
+	{
+		padding-left: 2rem;
+		padding-right: 2rem;
+	}
+}
+
+@media (max-width: 60rem) 
+{
+	.nav-bar
+	{
+		nav 
+		{
+			display: none;
+		}
+
+		.hamburger
+		{
+			display: block;
+		}
+	}	
+
 }

@@ -1,12 +1,29 @@
+body
+{
+	padding-top: 7rem;
+}
+
 .nav-bar
 {
-	// padding-top: 2rem;
+	position: fixed;
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+    box-sizing: border-box;
+
+    a {
+    	text-decoration: none;
+    }
 
 	nav
 	{
 		ul 
 		{
 		  list-style: none;
+		  margin-bottom: 0;
 		}
 
 		li
@@ -16,8 +33,17 @@
 
 		  a
 		  {
-		  	padding: 2rem 1rem;
+		  	// padding: 2rem 1rem;
+		  	padding-left: 2rem;
 		  }
 		}
+	}
+
+	.hamburger
+	{
+		display: none;
+		position: absolute;
+	    // top: 2rem;
+	    right: 0;
 	}
 }

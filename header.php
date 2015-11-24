@@ -21,33 +21,29 @@
 			<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
 		<![endif]-->
 
-		<div class="container">
-			<div class="row nav-bar">
-					<div class="three columns"> 
-						<a href="">METOD</a>
-					</div>
-				
-					<div class="nine columns">
-						<nav class="u-pull-right">
-							<ul>
-								<?php
-									// get all the pages from 'main' category
-									$main_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'main', 'posts_per_page' => 200 ) );
+		<div class="nav-bar">
+			<div class="container">
+				<div class="row">
+					<a class="three columns" href="">METOD</a>
+					<nav class="nine columns">
+						<ul class="u-pull-right">
+							<?php
+								// get all the pages from 'main' category
+								$main_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'main', 'posts_per_page' => 200 ) );
 
-									foreach($main_pages as $main_page) // for each school within schools
-									{
-										
-										$main_URL = get_page_link($main_page->ID);
-										$main_name = $main_page->post_title;
-										// showMeTheGoods($school_name);
-										echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
-									}	
-								?>
-					            <li><a href="#">Me</a></li>
-					        </ul>
-				        </nav>
-					</div>
-				
-
+								foreach($main_pages as $main_page) // for each school within schools
+								{
+									
+									$main_URL = get_page_link($main_page->ID);
+									$main_name = $main_page->post_title;
+									// showMeTheGoods($school_name);
+									echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
+								}	
+							?>
+				            <li><a href="#">Me</a></li>
+				        </ul>
+			        </nav>
+					<a class="hamburger">+</a>
+				</div>
 			</div>
 		</div>
