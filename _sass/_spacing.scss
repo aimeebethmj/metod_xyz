@@ -1,0 +1,44 @@
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%,-50%);
+  -moz-transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  -o-transform: translate(-50%,-50%);
+  transform: translate(-50%,-50%);
+}
+.vertical-centered {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  transform: translateY(-50%);
+  width: 100%;
+}
+.low-centered {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  -webkit-transform: translate(-75%,-50%);
+  -moz-transform: translate(-75%,-50%);
+  -ms-transform: translate(-75%,-50%);
+  -o-transform: translate(-75%,-50%);
+  transform: translate(-75%,-50%);
+}
+
+.main-heading
+{
+  text-align: center;
+  padding: 6rem 0 3rem;
+}
+
+// ---------
+
+.container.slider
+  {
+    position: relative;
+  }

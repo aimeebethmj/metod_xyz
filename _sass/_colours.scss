@@ -1,0 +1,28 @@
+ul.gallery {
+	
+	a {
+		background-color: rgba(0,0,200, 0.7);
+		color: white;
+	}
+}
+
+.blog
+{
+	background: rgba(0,0,255,0.2);
+}
+
+.multiple-slider
+{
+    .column
+    {
+    	background: transparent;
+    	&:hover
+	    {
+	        background: rgba(0,0,255,0.4);
+	    }
+	    &:focus
+	    {
+	    	outline: none;
+	    }
+	}    
+}
