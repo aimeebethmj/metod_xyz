@@ -10,8 +10,7 @@
             <script type="text/javascript">
                 $(document).ready(function()
                 {
-                    var slickOptions = 
-                    {
+                    $('.slider').slick({
                         dots: true,
                         arrows: false,
                         autoplay: true,
@@ -19,11 +18,22 @@
                         speed: 300, 
                         fade: true,
                         infinite: true  
-                    }
+                    });
 
-                    $('.slider').slick(slickOptions);
+                    $('.multiple-slider').slick({
+                        // autoplay: true,
+                        // autoplaySpeed: 8000, 
+                        speed: 300, 
+                        arrows: true,
+                        dots: false,
+                        infinite: true,
+                        slidesToShow: 2,
+                        slidesToScroll: 1
+                    });
                 });
             </script>
+
+
 
         <?php endif; ?>
 
