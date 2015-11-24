@@ -1,5 +1,22 @@
-		
-		<script src="<?php theJQueryDirectory(); ?>jquery.min.js"></script>
+		<?php 
+            // vars
+            $meHeading = get_field('');
+            $profilePic = get_field('');
+            $meBlurb = get_field('');
+            // add other vars for alternative footer
+        ?>
+
+		<div class="container me">
+            <h2 class="main-heading">Me</h2>
+            <div class="boxed-content">
+                <div class="two columns">
+                    <img src="<?php theActiveThemeDirectory(); ?>img/metod_profile_screenshot.png">
+                </div>
+                <div class="ten columns">I work multidisciplinary across experimental art, facilitation, design and photography. I tend to explore strategies and formats around how to engage myself and others in an exchanging dialogue.</div>
+            </div>
+        </div>
+
+        <script src="<?php theJQueryDirectory(); ?>jquery.min.js"></script>
         <script src="<?php theHTML5BoilerplateDirectory(); ?>js/plugins.js"></script>
         <script src="<?php theActiveThemeDirectory(); ?>js/main.js"></script>
 
@@ -21,8 +38,8 @@
                     });
 
                     $('.multiple-slider').slick({
-                        // autoplay: true,
-                        // autoplaySpeed: 8000, 
+                        autoplay: true,
+                        autoplaySpeed: 8000, 
                         speed: 300, 
                         arrows: true,
                         dots: false,
