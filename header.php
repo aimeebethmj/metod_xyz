@@ -23,16 +23,16 @@
 
 		<div class="container">
 			<div class="row nav-bar">
-					<div class="six columns"> 
+					<div class="three columns"> 
 						<a href="">METOD</a>
 					</div>
 				
-					<div class="six columns">
+					<div class="nine columns">
 						<nav class="u-pull-right">
 							<ul>
 								<?php
 									// get all the pages from 'main' category
-									$main_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name'    => 'main', 'posts_per_page' => 200 ) );
+									$main_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'main', 'posts_per_page' => 200 ) );
 
 									foreach($main_pages as $main_page) // for each school within schools
 									{
