@@ -24,7 +24,7 @@
 		<div class="nav-bar">
 			<div class="container">
 				<div class="row">
-					<a class="three columns" href="">METOD</a>
+					<a class="three columns" href="<?php echo site_url(); ?>">Metod</a>
 					<nav class="nine columns">
 						<ul class="u-pull-right">
 							<?php
