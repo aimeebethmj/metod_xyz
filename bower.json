@@ -1,11 +1,11 @@
 {
-  "name": "LearnPress",
+  "name": "MetodXYZ",
   "version": "0.1",
-  "homepage": "https://github.com/matteomenapace/LearnPress",
+  "homepage": "https://github.com/aimeebethmj/metod_xyz",
   "authors": [
-    "Matteo Menapace <https://twitter.com/@baddeo>"
+    "Aimee Matthew-John <https://twitter.com/@aimeebethmj>"
   ],
-  "description": "A minimal WordPress starter theme designed for learning",
+  "description": "The site for Metod Blejec, design extraordinaire",
   "main": "index.php",
   "keywords": [
     "WordPress"
@@ -20,6 +20,8 @@
   ],
   "dependencies": {
     "html5-boilerplate": "~5.2.0",
-    "skeleton-css": "~2.0.4"
+    "skeleton-css": "~2.0.4",
+    "jquery": "~2.1.4",
+    "slick-carousel": "~1.5.8"
   }
 }
