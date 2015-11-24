@@ -70,7 +70,7 @@ Template Name: Home Page
 
 			<div class="container blog">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
-				<div class="multiple-slider">
+				<div class="multiple-slider boxed-content">
 					
 						<div class="one-half column">
 							<h3>123: Documentary Photography</h3>
