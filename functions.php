@@ -1,5 +1,8 @@
 <?php
 
+// This theme uses post thumbnails
+add_theme_support( 'post-thumbnails' );
+
 // a handy function to "console.log" PHP data
 function consoleLog($data, $function) 
 {
