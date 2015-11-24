@@ -21,22 +21,35 @@ function theActiveThemeDirectory()
 function getBowerDirectory()
 {
 	$directory = get_template_directory_uri() . '/bower_components/';
-	if (!fileExists($directory)) consoleLog("You seem to be missing the 'bower_components' folder", 'error');
-	else return $directory;
+	// if (!fileExists($directory)) consoleLog("You seem to be missing the 'bower_components' folder", 'error');
+	return $directory;
+}
+
+function theBowerDirectory($componentPath)
+{
+	$directory = getBowerDirectory() . $componentPath;
+	// if (!fileExists($directory)) consoleLog("You seem to be missing the '" . subPath . "' folder", 'error');
+	return $directory;
 }
 
 function theHTML5BoilerplateDirectory()
 {
-	$directory = getBowerDirectory() . 'html5-boilerplate/dist/';
-	if (!fileExists($directory)) consoleLog("You seem to be missing the 'html5-boilerplate/dist' folder", 'error');
-	print $directory;
+	print theBowerDirectory('html5-boilerplate/dist/');
 }
 
 function theSkeletonDirectory()
 {
-	$directory = getBowerDirectory() . 'skeleton-css/';
-	if (!fileExists($directory)) consoleLog("You seem to be missing the 'skeleton-css' folder", 'error');
-	print $directory;
+	print theBowerDirectory('skeleton-css/');
+}
+
+function theJQueryDirectory()
+{
+	print theBowerDirectory('jquery/dist/');
+}
+
+function theSlickDirectory()
+{
+	print theBowerDirectory('slick-carousel/slick/');
 }
 
 // from http://php.net/manual/en/function.file-exists.php#103436
@@ -44,7 +57,5 @@ function fileExists($path)
 {
     return (@fopen($path, 'r') == true);
 }
-
-
 
 ?>
