@@ -6,7 +6,7 @@
             // add other vars for alternative footer
         ?>
 
-		<div class="container me">
+		<div class="container" id="me">
             <h2 class="main-heading">Me</h2>
             <div class="boxed-content">
                 <div class="two columns">

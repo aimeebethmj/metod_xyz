@@ -40,7 +40,7 @@
 									echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
 								}	
 							?>
-				            <li><a href="#">Me</a></li>
+				            <li><a href="#me">Me</a></li>
 				        </ul>
 			        </nav>
 					<a class="hamburger">+</a>
