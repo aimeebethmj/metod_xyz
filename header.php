@@ -22,7 +22,7 @@
 		<![endif]-->
 
 		<div class="container">
-			<div class="row">
+			<div class="row nav-bar">
 					<div class="six columns"> 
 						<a href="">METOD</a>
 					</div>
