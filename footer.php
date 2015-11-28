@@ -1,19 +1,23 @@
 		<?php 
             // vars
-            $meHeading = get_field('');
-            $profilePic = get_field('');
-            $meBlurb = get_field('');
+            $meHeading = get_field('me_heading', 15);
+            $profilePic = get_field('footer_profile_pic', 15);
+            $meBlurb = get_field('footer_blurb', 15);
+            $endNote = get_field('end_note', 2);
             // add other vars for alternative footer
         ?>
 
 		<div class="container" id="me">
-            <h2 class="main-heading">Me</h2>
+            <h2 class="main-heading"><?php echo $meHeading; ?></h2>
             <div class="boxed-content">
                 <div class="two columns">
-                    <img src="<?php theActiveThemeDirectory(); ?>img/metod_profile_screenshot.png">
+                    <img src="<?php echo $profilePic['url'] ; ?>">
                 </div>
-                <div class="ten columns">I work multidisciplinary across experimental art, facilitation, design and photography. I tend to explore strategies and formats around how to engage myself and others in an exchanging dialogue.</div>
+                <div class="ten columns"><?php echo $meBlurb; ?></div>
             </div>
+        </div>
+        <div id="footer-bar">
+            <p><?php echo $endNote; ?></p>
         </div>
 
         <script src="<?php theJQueryDirectory(); ?>jquery.min.js"></script>

@@ -1,8 +1,23 @@
-.me
+#me
 {
 	img
 	{
 		max-width: 100%;
 	    transform: translateY(-33%);
+	    margin: auto;
+	    display: block;
+	}
+}
+
+#footer-bar
+{
+    margin-top: 3rem;
+	p
+	{
+		text-align: center;
+		padding-top: 1.5rem;
+		padding-bottom: 1.5rem;
+		color: white;
+		margin: 0;
 	}
 }
