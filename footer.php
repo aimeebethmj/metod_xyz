@@ -4,6 +4,10 @@
             $profilePic = get_field('footer_profile_pic', 15);
             $meBlurb = get_field('footer_blurb', 15);
             $endNote = get_field('end_note', 2);
+            $email = get_field('email', 15);
+            $instaLink = get_field('instagram_link', 15);
+            $twitLink = get_field('twitter_link', 15);
+            $wantMore = get_field('want_more_message', 15);
             // add other vars for alternative footer
         ?>
 
@@ -15,6 +19,16 @@
                 </div>
                 <div class="ten columns"><?php echo $meBlurb; ?></div>
             </div>
+            <div class="boxed-content">
+                <div class="twelve columns contact-links">
+                    <?php echo $email; ?>
+                    <a href="<?php echo $instaLink; ?>"><i class="fa fa-instagram fa-2x"></i></a>
+                    <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter-square fa-2x"></i></a>
+                </div>
+                <div class="twelve columns contact-links">
+                    <?php echo $wantMore; ?><a href="<?php echo get_page_link(15); ?>"><i class="fa fa-arrow-right fa-2x"></i></a>
+                </div>
+            </div>
         </div>
         <div id="footer-bar">
             <p><?php echo $endNote; ?></p>
@@ -24,7 +38,7 @@
         <script src="<?php theHTML5BoilerplateDirectory(); ?>js/plugins.js"></script>
         <script src="<?php theActiveThemeDirectory(); ?>js/main.js"></script>
 
-        <?php if (is_front_page() || in_category('work-types')) : ?>
+        <?php if (is_front_page() || in_category('work-types' || 'art') ) : ?>
 
             <!-- load Slick and apply it to .slider -->
             <script type="text/javascript" src="<?php theSlickDirectory() ; ?>slick.min.js"></script>
