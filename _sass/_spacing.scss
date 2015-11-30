@@ -44,6 +44,17 @@
   padding: 9rem 0 3rem;
 }
 
+.sub-heading
+{
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.sub-sub-heading
+{
+  text-align: center;
+}
+
 // ---------
 
 .container.slider
@@ -55,4 +66,34 @@
 {
   margin-left: 6%;
   margin-right: 6%;
+}
+
+.text-content
+{
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contact-links
+{
+  text-align: center;
+  margin-top: 3rem;
+
+  p
+  {
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+
+  a
+  {
+    padding-left: 2rem;
+
+    i.fa-twitter-square
+    {
+      padding-right: 2rem;
+    }
+  }
+
+  
 }

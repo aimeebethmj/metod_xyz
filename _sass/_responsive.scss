@@ -10,6 +10,11 @@
 		padding-left: 2rem;
 		padding-right: 2rem;
 	}
+
+	.slick-slide img
+	{
+		width: 100%;
+	}
 }
 
 @media (max-width: 60rem) 
@@ -26,5 +31,11 @@
 			display: block;
 		}
 	}	
+
+	.text-content
+	{
+	  margin-left: 15%;
+	  margin-right: 15%;
+	}
 
 }

@@ -298,24 +298,6 @@ body {
   padding: 3rem;
 }
 
-@media (max-width: 120rem) {
-  .container {
-    width: 100%;
-  }
-
-  .nav-bar {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-@media (max-width: 60rem) {
-  .nav-bar nav {
-    display: none;
-  }
-  .nav-bar .hamburger {
-    display: block;
-  }
-}
 .container {
   padding: 0;
   max-width: 120rem;
@@ -361,6 +343,15 @@ body {
   padding: 9rem 0 3rem;
 }
 
+.sub-heading {
+  text-align: center;
+  padding-top: 7rem;
+}
+
+.sub-sub-heading {
+  text-align: center;
+}
+
 .container.slider {
   position: relative;
 }
@@ -368,6 +359,26 @@ body {
 .boxed-content {
   margin-left: 6%;
   margin-right: 6%;
+}
+
+.text-content {
+  margin-left: 25%;
+  margin-right: 25%;
+}
+
+.contact-links {
+  text-align: center;
+  margin-top: 3rem;
+}
+.contact-links p {
+  padding-right: 2rem;
+  padding-left: 2rem;
+}
+.contact-links a {
+  padding-left: 2rem;
+}
+.contact-links a i.fa-twitter-square {
+  padding-right: 2rem;
 }
 
 ul.gallery li {
@@ -414,14 +425,42 @@ ul.gallery li a:hover {
 }
 #footer-bar p {
   text-align: center;
-  padding-top: 1.5rem;
-  padding-bottom: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   color: white;
   margin: 0;
 }
 
 img :focus {
   outline: none;
+}
+
+@media (max-width: 120rem) {
+  .container {
+    width: 100%;
+  }
+
+  .nav-bar {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .slick-slide img {
+    width: 100%;
+  }
+}
+@media (max-width: 60rem) {
+  .nav-bar nav {
+    display: none;
+  }
+  .nav-bar .hamburger {
+    display: block;
+  }
+
+  .text-content {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
