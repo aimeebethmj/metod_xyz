@@ -36,17 +36,16 @@ Template Name: Home Page
 				// vars
 				$heading = get_field('main_heading');
 				$blogHeading = get_field('blog_heading');
-				$aboutHeading = get_field('about_heading');
 			?>
 
 			<div class="container work">				
 				<h2 class="main-heading"><?php echo $heading; ?></h2>
 				<ul class="gallery">
-				<!-- <div class="row"> -->
+				
 
 					<?php
 						// get all the pages from 'main' category
-						$work_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'work', 'posts_per_page' => 200 ) );
+						$work_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'work-types', 'posts_per_page' => 200 ) );
 
 						foreach($work_pages as $work_page) // for each school within schools
 						{
@@ -60,12 +59,8 @@ Template Name: Home Page
 							echo '<li style="background-image:url(' . $featured_image[0] .');"><a href="' . $work_URL . '"><h3 class="centered">' . $work_name . '</h3></a></li>';
 						}	 
 					?>
-					<!-- <div class="one-half column">
-						<img src="">
-						<a href=""><h3></h3></a>
-					</div> -->
-				</ul>	
-				<!-- </div> -->
+					
+				</ul>		
 			</div>
 
 			<div class="container blog">
