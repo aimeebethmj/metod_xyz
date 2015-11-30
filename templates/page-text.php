@@ -21,7 +21,6 @@ Template Name: Text Page
 		    	<div class="container">
 					<div class="row">
 						<img class="u-max-full-width" src="<?php echo $imageURL; ?>">
-						<?php echo the_post_thumbnail( 'full' );?>
 					</div>
 				</div>
 
@@ -39,7 +38,7 @@ Template Name: Text Page
 				<div class="text-content">
 					<h1 class="sub-heading"><?php echo get_the_title(); ?></h1>
 					<h3 class="sub-sub-heading"><?php echo $noteDate;?></h3>
-					<div class="twelve columns"><?php the_content();?></div>
+					<div class="twelve columns fieldnotes"><?php the_content();?></div>
 				</div>
 					
 			</div>

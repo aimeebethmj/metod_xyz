@@ -365,6 +365,9 @@ body {
   margin-left: 25%;
   margin-right: 25%;
 }
+.text-content .fieldnotes {
+  margin-bottom: 5rem;
+}
 
 .contact-links {
   text-align: center;
