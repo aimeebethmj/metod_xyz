@@ -24,7 +24,7 @@
         <script src="<?php theHTML5BoilerplateDirectory(); ?>js/plugins.js"></script>
         <script src="<?php theActiveThemeDirectory(); ?>js/main.js"></script>
 
-        <?php if (is_front_page()) : ?>
+        <?php if (is_front_page() || in_category('work-types')) : ?>
 
             <!-- load Slick and apply it to .slider -->
             <script type="text/javascript" src="<?php theSlickDirectory() ; ?>slick.min.js"></script>
