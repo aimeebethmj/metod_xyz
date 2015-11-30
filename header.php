@@ -12,6 +12,7 @@
 		<link href="<?php theHTML5BoilerplateDirectory(); ?>css/normalize.css" rel="stylesheet">
 		<link href="<?php theSkeletonDirectory(); ?>css/skeleton.css" rel="stylesheet">
 		<link href="<?php theActiveThemeDirectory(); ?>css/main.css" rel="stylesheet">
+		<link href="<?php theFontAwesomeDirectory(); ?>css/font-awesome.min.css" rel="stylesheet">
 
 		<script src="<?php theHTML5BoilerplateDirectory(); ?>js/vendor/modernizr-2.8.3.min.js"></script>
 	</head>

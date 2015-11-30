@@ -55,6 +55,11 @@ function theSlickDirectory()
 	print theBowerDirectory('slick-carousel/slick/');
 }
 
+function theFontAwesomeDirectory()
+{
+	print theBowerDirectory('font-awesome/');
+}
+
 // from http://php.net/manual/en/function.file-exists.php#103436
 function fileExists($path)
 {
