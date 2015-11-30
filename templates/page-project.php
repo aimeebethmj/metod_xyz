@@ -39,9 +39,10 @@ Template Name: Project Page
 			?>
 
 			<div class="container project">				
-				<h1 class="sub-heading"><?php echo get_the_title(); ?></h1>
+				
 				
 				<div class="text-content">
+					<h1 class="sub-heading"><?php echo get_the_title(); ?></h1>
 					<h3 class="sub-sub-heading"><?php echo $projectBlurb;?></h3>
 					<h3 class="sub-sub-heading"><?php echo $projectDate;?></h3>
 					<div class="twelve columns"><?php the_content();?></div>
