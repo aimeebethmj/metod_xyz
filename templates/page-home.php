@@ -63,6 +63,7 @@ Template Name: Home Page
 				</ul>		
 			</div>
 
+		<!-- FIELD NOTES -->
 			<div class="container blog">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
 				<div class="multiple-slider boxed-content">
