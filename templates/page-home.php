@@ -23,7 +23,7 @@ Template Name: Home Page
 
 					<div class="row">
 						<img class="u-max-full-width" src="<?php echo $image['url']; ?>">
-						<a href="<?php echo $link; ?>"><h2 class="low-centered"><?php echo $headline; ?></h2></a>
+						<a href="<?php echo $link; ?>"><h1 class="low-centered"><?php echo $headline; ?></h1></a>
 					</div>
 					
 				<?php endwhile; ?>
@@ -56,7 +56,7 @@ Template Name: Home Page
 
 							// consoleLog($featured_image);
 							
-							echo '<li style="background-image:url(' . $featured_image[0] .');"><a href="' . $work_URL . '"><h3 class="centered">' . $work_name . '</h3></a></li>';
+							echo '<li style="background-image:url(' . $featured_image[0] .');"><a href="' . $work_URL . '"><h2 class="centered">' . $work_name . '</h2></a></li>';
 						}	 
 					?>
 					
