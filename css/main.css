@@ -1,33 +1,129 @@
 @charset "UTF-8";
+@font-face {
+  font-family: 'DinBold';
+  src: url("fonts/din-bold.eot");
+  src: url("fonts/din-bold.eot?#iefix") format("embedded-opentype"), url("fonts/din-bold.woff") format("woff"), url("fonts/din-bold.ttf") format("truetype"), url("fonts/din-bold.svg#DinBold") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Din';
+  src: url("fonts/din-regular.eot");
+  src: url("fonts/din-regular.eot?#iefix") format("embedded-opentype"), url("fonts/din-regular.woff") format("woff"), url("fonts/din-regular.ttf") format("truetype"), url("fonts/din-regular.svg#Din") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINPro-Regular';
+  src: url("fonts/DINPro-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'DINPro-Bold';
+  src: url("fonts/DINPro-Bold.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  font-family: 'DINPro-Regular', 'Helvetica', sans-serif;
+}
+
+b, strong {
+  font-family: 'DINPro-Bold';
+}
+
+h1 {
+  font-size: 72px;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.nav-bar .home a {
+  font-size: 1.6rem;
+}
+.nav-bar nav li a {
+  font-size: 1.6rem;
+}
+
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.8);
 }
+.nav-bar a {
+  color: #000000;
+}
+.nav-bar a:hover {
+  color: #00B4FF;
+}
+.nav-bar a:active {
+  color: #00B4FF;
+}
 
 ul.gallery a {
-  background-color: rgba(0, 0, 200, 0.7);
+  background-color: rgba(0, 180, 255, 0.7);
   color: white;
 }
 
 .blog {
-  background: rgba(0, 0, 255, 0.2);
+  background: #F4FCFF;
 }
 
 .multiple-slider .column {
   background: transparent;
 }
 .multiple-slider .column:hover {
-  background: rgba(0, 0, 255, 0.4);
+  background: #95E0FB;
 }
 .multiple-slider .column:focus {
   outline: none;
 }
 
 #footer-bar {
-  background-color: #00ffff;
+  background-color: #00B4FF;
+}
+
+nav li a {
+  color: #000000;
+}
+nav li a:hover {
+  color: #00B4FF;
+}
+nav li a:active {
+  color: #00B4FF;
+}
+
+.slider h1 {
+  color: #FFFFFF;
+}
+.slider .slick-slide:focus {
+  outline: none;
+}
+.slider .slick-dots li button:hover:before, .slider .slick-dots li button:focus:before {
+  opacity: 1;
+}
+.slider .slick-dots li button:before {
+  color: #FFFFFF;
+  opacity: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.slider .slick-dots li.slick-active button:before {
+  color: #00B4FF;
+  opacity: 1;
 }
 
 body {
-  padding-top: 7rem;
+  padding-top: 8rem;
 }
 
 .nav-bar {
@@ -35,8 +131,8 @@ body {
   top: 0;
   z-index: 1;
   width: 100%;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   box-sizing: border-box;
 }
 .nav-bar a {
@@ -52,11 +148,22 @@ body {
 }
 .nav-bar nav li a {
   padding-left: 2rem;
+  font-size: 1.6rem;
 }
 .nav-bar .hamburger {
   display: none;
   position: absolute;
   right: 0;
+}
+
+.logo {
+  background-image: url("../img/Metod_logo_80.5x40px.png");
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 50%;
+  float: left;
 }
 
 /* Slider */
@@ -327,7 +434,7 @@ body {
 
 .low-centered {
   position: absolute;
-  top: 75%;
+  top: 70%;
   /* left: 50%;
   -webkit-transform: translate(-75%,-50%);
   -moz-transform: translate(-75%,-50%);
@@ -340,7 +447,7 @@ body {
 
 .main-heading {
   text-align: center;
-  padding: 9rem 0 3rem;
+  padding: 10rem 0 2rem;
 }
 
 .sub-heading {
@@ -380,9 +487,6 @@ body {
 .contact-links a {
   padding-left: 2rem;
 }
-.contact-links a i.fa-twitter-square {
-  padding-right: 2rem;
-}
 
 ul.gallery li {
   margin: 0;
@@ -409,7 +513,7 @@ ul.gallery li a {
   display: block;
   text-decoration: none;
 }
-ul.gallery li a h3 {
+ul.gallery li a h2 {
   margin: 0;
 }
 ul.gallery li a:hover {
