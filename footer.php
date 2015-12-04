@@ -17,16 +17,16 @@
                 <div class="two columns">
                     <img src="<?php echo $profilePic['url'] ; ?>">
                 </div>
-                <div class="ten columns"><?php echo $meBlurb; ?></div>
+                <div class="ten columns"><p><?php echo $meBlurb; ?></p></div>
             </div>
             <div class="boxed-content">
                 <div class="twelve columns contact-links">
-                    <?php echo $email; ?>
+                    <p><b><?php echo $email; ?></b></p>
                     <a href="<?php echo $instaLink; ?>"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter-square fa-2x"></i></a>
+                    <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter fa-2x"></i></a>
                 </div>
                 <div class="twelve columns contact-links">
-                    <?php echo $wantMore; ?><a href="<?php echo get_page_link(15); ?>"><i class="fa fa-arrow-right fa-2x"></i></a>
+                    <p><?php echo $wantMore; ?></p><a href="<?php echo get_page_link(15); ?>"><i class="fa fa-arrow-right fa-2x"></i></a>
                 </div>
             </div>
         </div>
@@ -48,7 +48,7 @@
                     $('.slider').slick({
                         dots: true,
                         arrows: false,
-                        autoplay: true,
+                        autoplay: false,
                         autoplaySpeed: 8000, 
                         speed: 300, 
                         fade: true,
