@@ -25,7 +25,10 @@
 		<div class="nav-bar">
 			<div class="container">
 				<div class="row">
-					<a class="three columns" href="<?php echo site_url(); ?>">Metod</a>
+					<div class="three columns">
+						<div class="logo"></div>
+						<div class="home"><a href="<?php echo site_url(); ?>">Metod</a></div>
+					</div>
 					<nav class="nine columns">
 						<ul class="u-pull-right">
 							<?php

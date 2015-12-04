@@ -1,6 +1,6 @@
 body
 {
-	padding-top: 7rem;
+	padding-top: 8rem;
 }
 
 .nav-bar
@@ -9,8 +9,8 @@ body
     top: 0;
     z-index: 1;
     width: 100%;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     
     box-sizing: border-box;
 
@@ -35,6 +35,7 @@ body
 		  {
 		  	// padding: 2rem 1rem;
 		  	padding-left: 2rem;
+		  	font-size: 1.6rem;
 		  }
 		}
 	}
@@ -46,4 +47,15 @@ body
 	    // top: 2rem;
 	    right: 0;
 	}
+}
+
+.logo
+{
+	background-image: url('../img/Metod_logo_80.5x40px.png');
+	height: 2rem;
+	background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 50%;
+    float: left;
 }
