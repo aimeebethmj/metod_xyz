@@ -1,20 +1,46 @@
+// VARIABLES
+
+$black: #000000;
+$teal: #005A80;
+$blue1: #00B4FF;
+$blue2: #5FD1F9;
+$blue3: #95E0FB;
+$paleBlue: #F4FCFF;
+$white: #FFFFFF;
+
+
 .nav-bar 
 {
-	background-color: rgba(255,255,255,0.8);
+	background-color: rgba($white, 0.8);
+
+	a 
+	{
+		color: $black;
+
+		&:hover
+	    {
+	        color: $blue1;
+	    }
+	    &:active
+	    {
+	        color: $blue1;
+	    }
+	}
+	
 }
 
 ul.gallery 
 {	
 	a 
 	{
-		background-color: rgba(0,0,200, 0.7);
+		background-color: rgba($blue1, .7);
 		color: white;
 	}
 }
 
 .blog
 {
-	background: rgba(0,0,255,0.2);
+	background: $paleBlue;
 }
 
 .multiple-slider
@@ -24,7 +50,7 @@ ul.gallery
     	background: transparent;
     	&:hover
 	    {
-	        background: rgba(0,0,255,0.4);
+	        background: $blue3;
 	    }
 	    &:focus
 	    {
@@ -35,5 +61,67 @@ ul.gallery
 
 #footer-bar
 {
-	background-color: #00ffff;
+	background-color: $blue1;
+}
+
+nav
+{
+	
+	li
+	{
+	  a
+	  {
+	  	color: $black;
+
+	  	&:hover
+	    {
+	        color: $blue1;
+	    }
+	    &:active
+	    {
+	        color: $blue1;
+	    }
+	  }
+	}
+}
+
+.slider 
+{
+	h1
+	{
+		color: $white;
+	}
+	
+	.slick-slide:focus
+	{
+		outline: none;
+	}
+
+	.slick-dots 
+	{    
+	    li 
+	    {
+	        button 
+	        {
+	            &:hover, &:focus 
+	            {
+	                &:before 
+	                {
+	                    opacity: 1;
+	                }
+	            }
+	            &:before 
+	            {
+	                color: $white;
+	                opacity: 1;
+	                -webkit-font-smoothing: antialiased;
+	                -moz-osx-font-smoothing: grayscale;
+	            }
+	        }
+	        &.slick-active button:before {
+	            color: $blue1;
+	            opacity: 1;
+	        }
+	    }
+	}
 }
