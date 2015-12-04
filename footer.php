@@ -47,7 +47,7 @@
                 {
                     $('.slider').slick({
                         dots: true,
-                        arrows: false,
+                        arrows: true,
                         autoplay: false,
                         autoplaySpeed: 8000, 
                         speed: 300, 
