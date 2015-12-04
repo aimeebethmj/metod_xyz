@@ -53,7 +53,7 @@ Template Name: Work Page
 
 							// consoleLog($featured_image);
 							
-							echo '<li style="background-image:url(' . $featured_image[0] .');"><a href="' . $work_URL . '"><h3 class="centered">' . $work_name . '</h3></a></li>';
+							echo '<li style="background-image:url(' . $featured_image[0] .');"><a href="' . $work_URL . '"><h2 class="centered">' . $work_name . '</h2></a></li>';
 						}	 
 					?>
 					
