@@ -170,6 +170,12 @@ body {
   float: left;
 }
 
+#logo-link {
+  height: 2rem;
+  width: 4.5rem;
+  display: block;
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -409,6 +415,13 @@ body {
   padding: 4rem 8rem;
 }
 
+.slider .slick-next {
+  right: 50px;
+}
+.slider .slick-prev {
+  left: 50px;
+}
+
 .container {
   padding: 0;
   max-width: 120rem;
@@ -488,7 +501,7 @@ body {
   padding-right: 2rem;
   padding-left: 2rem;
 }
-.contact-links a {
+.contact-links a .fa-twitter {
   padding-left: 2rem;
 }
 
@@ -540,6 +553,10 @@ ul.gallery li a:hover {
   padding-bottom: 2rem;
   color: white;
   margin: 0;
+}
+
+.contact-links a {
+  text-decoration: none;
 }
 
 img :focus {
