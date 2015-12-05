@@ -21,12 +21,12 @@
             </div>
             <div class="boxed-content">
                 <div class="twelve columns contact-links">
-                    <p><b><?php echo $email; ?></b></p>
-                    <a href="<?php echo $instaLink; ?>"><i class="fa fa-instagram fa-2x"></i></a>
-                    <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter fa-2x"></i></a>
+                        <p><b><?php echo $email; ?></b></p>
+                        <a href="<?php echo $instaLink; ?>"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter fa-2x"></i></a>
                 </div>
                 <div class="twelve columns contact-links">
-                    <p><?php echo $wantMore; ?></p><a href="<?php echo get_page_link(15); ?>"><i class="fa fa-arrow-right fa-2x"></i></a>
+                    <p><?php echo $wantMore; ?></p><a href="<?php echo get_page_link(15); ?>">➔</a>
                 </div>
             </div>
         </div>
