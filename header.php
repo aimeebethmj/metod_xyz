@@ -26,7 +26,9 @@
 			<div class="container">
 				<div class="row">
 					<div class="three columns">
-						<div class="logo"></div>
+						<div class="logo">
+							<a href="<?php echo site_url(); ?>" id="logo-link"></a>
+						</div>
 						<div class="home"><a href="<?php echo site_url(); ?>">Metod</a></div>
 					</div>
 					<nav class="nine columns">
