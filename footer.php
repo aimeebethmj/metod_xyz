@@ -22,8 +22,8 @@
             <div class="boxed-content">
                 <div class="twelve columns contact-links">
                         <p><b><?php echo $email; ?></b></p>
-                        <a href="<?php echo $instaLink; ?>"><i class="fa fa-instagram fa-2x"></i></a>
-                        <a href="<?php echo $twitLink; ?>"><i class="fa fa-twitter fa-2x"></i></a>
+                        <a href="<?php echo $instaLink; ?>" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                        <a href="<?php echo $twitLink; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                 </div>
                 <div class="twelve columns contact-links arrow">
                     <p><?php echo $wantMore; ?></p><a href="<?php echo get_page_link(15); ?>">→</a>
