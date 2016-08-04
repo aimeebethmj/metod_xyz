@@ -40,23 +40,37 @@ module.exports = function(grunt) {
         }
       }
     },
+    postcss: {
+      options: {
+        map: true,
+        processors: [
+          require('autoprefixer')({
+              browsers: ['last 2 versions']
+          })
+        ]
+      },
+      dist: {
+        src: '../css/*.css'
+      }
+    },
     watch: {
       livereload: {
         files: [
           '../_sass/*.scss'
         ],
-        tasks: ['sass'],
+        tasks: ['sass','postcss:dist'],
         options: {
           livereload: true
-        },
-      },
+        }
+      }
     }
   });
  
   // Load tasks 
   grunt.loadNpmTasks('grunt-wordpress-deploy');
-  grunt.loadNpmTasks('grunt-contrib-sass')
-  grunt.loadNpmTasks('grunt-contrib-watch')
+  grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
  
   // Register tasks 
   grunt.registerTask('default', ['watch']);
