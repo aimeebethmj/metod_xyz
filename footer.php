@@ -26,7 +26,8 @@
                         <a href="<?php echo $twitLink; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
                 </div>
                 <div class="twelve columns contact-links arrow">
-                    <p><?php echo $wantMore; ?></p><a href="<?php echo get_page_link(15); ?>">→</a>
+                    <!-- <p></p> -->
+                    <a href="<?php echo get_page_link(15); ?>"><?php echo $wantMore; ?> →</a>
                 </div>
             </div>
         </div>
