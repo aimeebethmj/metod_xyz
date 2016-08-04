@@ -57,7 +57,7 @@
                     });
 
                     $('.multiple-slider').slick({
-                        autoplay: true,
+                        autoplay: false,
                         autoplaySpeed: 8000, 
                         speed: 300, 
                         arrows: true,
