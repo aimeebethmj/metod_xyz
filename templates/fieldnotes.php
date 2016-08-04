@@ -13,7 +13,7 @@
     {
       echo '<div class="one-half column">
               <a href="'. $URL .'">
-                <h3>'. $title . '</h3>
+                <h2>'. $title . '</h2>
                 <p>' . $blurb . '</p>
               </a>
             </div>';
