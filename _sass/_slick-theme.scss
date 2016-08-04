@@ -217,3 +217,14 @@ $slick-opacity-not-active: 0.25 !default;
         z-index: 1;
     }
 }
+
+.fieldnoteSlideH2
+{
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   -webkit-box-orient: vertical;
+   -webkit-line-clamp: 2; /* number of lines to show */
+   line-height: 1.25;        /* fallback */
+   max-height: 1.25*2;       /* fallback */
+}

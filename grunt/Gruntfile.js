@@ -32,7 +32,8 @@ module.exports = function(grunt) {
     sass: {
       dist: {
         options: {
-          style: 'expanded'
+          style: 'expanded',
+          lineNumbers: true
         },
         files: {
           '../css/main.css': '../_sass/sassy.scss'
