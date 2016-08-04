@@ -1,79 +1,79 @@
 body
 {
-	padding-top: 7.5rem;
+  padding-top: 7.5rem;
 }
 
 .nav-bar
 {
-	position: fixed;
-    top: 0;
-    z-index: 1;
-    width: 100%;
-    padding-top: 2.5rem;
-    padding-bottom: 2.5rem;
-    
-    box-sizing: border-box;
-    
-    .container
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  
+  box-sizing: border-box;
+  
+  .container
+  {
+    .row
     {
-    	.row
-    	{
-    		margin-right: 10%;
-    		margin-left: 10%;
-    	}
-
+      margin-right: 10%;
+      margin-left: 10%;
     }
 
-    a {
-    	text-decoration: none;
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  nav
+  {
+    ul 
+    {
+      list-style: none;
+      margin-bottom: 0;
     }
 
-	nav
-	{
-		ul 
-		{
-		  list-style: none;
-		  margin-bottom: 0;
-		}
+    li
+    {
+      margin-bottom: 0;
+      display: inline-block;
 
-		li
-		{
-		  margin-bottom: 0;
-		  display: inline-block;
+      a
+      {
+        // padding: 2rem 1rem;
+        padding-left: 2rem;
+        font-size: 1.6rem;
+      }
+    }
+  }
 
-		  a
-		  {
-		  	// padding: 2rem 1rem;
-		  	padding-left: 2rem;
-		  	font-size: 1.6rem;
-		  }
-		}
-	}
-
-	.hamburger
-	{
-		display: none;
-		position: absolute;
-	    // top: 2rem;
-	    right: 0;
-	}
+  .hamburger
+  {
+    display: none;
+    position: absolute;
+    // top: 2rem;
+    right: 0;
+  }
 }
 
 .logo
 {
-	background-image: url('../img/Metod_logo_80.5x40px.png');
-	height: 2rem;
-	background-repeat: no-repeat;
-    background-position: left;
-    background-size: contain;
-    width: 30%;
-    float: left;
-    padding-right: 2rem;
+  background-image: url('../img/Metod_logo_80.5x40px.png');
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size: contain;
+  width: 30%;
+  float: left;
+  padding-right: 2rem;
 }
 
 #logo-link
 {
-	height: 2rem;
-	width: 4.5rem;
-	display: block;
+  height: 2rem;
+  width: 4.5rem;
+  display: block;
 }
