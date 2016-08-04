@@ -10,14 +10,20 @@ Template Name: Home Page
 
 		<?php while (have_posts()) : the_post(); ?>
 
-		<!-- CAROUSEL -->
-		    <?php if( have_rows('carousel') ): ?>
+			<?php 
+				// vars
+				$heading = get_field('main_heading');
+				$blogHeading = get_field('blog_heading');
+			?>
 
-		    	<div class="container slider">
+		<!-- CAROUSEL -->
+		  <?php if( have_rows('carousel') ): ?>
+
+		    <div class="container slider">
 				<?php while( have_rows('carousel') ): the_row(); 
 					// vars
 					$image             = get_sub_field('image');
-			    	$headline          = get_sub_field('headline');
+			    $headline          = get_sub_field('headline');
 					$link              = get_sub_field('carousel_link');
 				?>
 
@@ -32,17 +38,11 @@ Template Name: Home Page
 			<?php endif; ?>
 
 		<!-- PRACTICE -->
-			<?php 
-				// vars
-				$heading = get_field('main_heading');
-				$blogHeading = get_field('blog_heading');
-			?>
-
+			
 			<div class="container work">				
 				<h2 class="main-heading"><?php echo $heading; ?></h2>
 				<ul class="gallery">
 				
-
 					<?php
 						// get all the pages from 'main' category
 						$work_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'work-types', 'posts_per_page' => 200 ) );
@@ -67,31 +67,7 @@ Template Name: Home Page
 			<div class="container blog ">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
 				<div class="multiple-slider boxed-content hide-for-mobile">
-						
-					<?php
-						// get all the pages from 'main' category
-						$fieldnote_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'fieldnote', 'posts_per_page' => 200 ) );
-
-						foreach($fieldnote_pages as $fieldnote_page) // for each school within schools
-						{
-							
-							$fieldnote_URL = get_page_link($fieldnote_page->ID);
-							$fieldnote_name = $fieldnote_page->post_title;
-							$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($fieldnote_page->ID), 'large' );
-							$slider_blurb = get_field('mini_blurb', 82);
-
-							if($fieldnote_page->ID != $post->ID):
-
-							echo '<div class="one-half column">
-							<a href="'. $fieldnote_URL .'"><h2 class="fieldnoteSlideH2">'. $fieldnote_name . '</h2>
-							<p>' . $slider_blurb . '</p></a>
-							</div>';
-
-							endif;
-						}
-
-					?>
-					
+					<?php get_template_part('templates/fieldnotes'); ?>
 				</div>
 			</div>
 
