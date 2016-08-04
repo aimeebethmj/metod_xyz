@@ -11,7 +11,7 @@ Template Name: Home Page
 		<?php while (have_posts()) : the_post(); ?>
 
 		<!-- CAROUSEL -->
-		    <?php if( have_rows('carousel') ): ?>
+		  <?php if( have_rows('carousel') ): ?>
 
 		    	<div class="container slider">
 				<?php while( have_rows('carousel') ): the_row(); 
@@ -67,31 +67,7 @@ Template Name: Home Page
 			<div class="container blog ">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
 				<div class="multiple-slider boxed-content hide-for-mobile">
-						
-					<?php
-						// get all the pages from 'main' category
-						$fieldnote_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'fieldnote', 'posts_per_page' => 200 ) );
-
-						foreach($fieldnote_pages as $fieldnote_page) // for each school within schools
-						{
-							
-							$fieldnote_URL = get_page_link($fieldnote_page->ID);
-							$fieldnote_name = $fieldnote_page->post_title;
-							$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($fieldnote_page->ID), 'large' );
-							$slider_blurb = get_field('mini_blurb', 82);
-
-							if($fieldnote_page->ID != $post->ID):
-
-							echo '<div class="one-half column">
-							<a href="'. $fieldnote_URL .'"><h3>'. $fieldnote_name . '</h3>
-							<p>' . $slider_blurb . '</p></a>
-							</div>';
-
-							endif;
-						}
-
-					?>
-					
+					<?php get_template_part('templates/fieldnotes'); ?>
 				</div>
 			</div>
 
