@@ -83,7 +83,7 @@ Template Name: Home Page
 							if($fieldnote_page->ID != $post->ID):
 
 							echo '<div class="one-half column">
-							<a href="'. $fieldnote_URL .'"><h2>'. $fieldnote_name . '</h2>
+							<a href="'. $fieldnote_URL .'"><h2 class="fieldnoteSlideH2">'. $fieldnote_name . '</h2>
 							<p>' . $slider_blurb . '</p></a>
 							</div>';
 
