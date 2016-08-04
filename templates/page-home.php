@@ -10,14 +10,20 @@ Template Name: Home Page
 
 		<?php while (have_posts()) : the_post(); ?>
 
+			<?php 
+				// vars
+				$heading = get_field('main_heading');
+				$blogHeading = get_field('blog_heading');
+			?>
+
 		<!-- CAROUSEL -->
 		  <?php if( have_rows('carousel') ): ?>
 
-		    	<div class="container slider">
+		    <div class="container slider">
 				<?php while( have_rows('carousel') ): the_row(); 
 					// vars
 					$image             = get_sub_field('image');
-			    	$headline          = get_sub_field('headline');
+			    $headline          = get_sub_field('headline');
 					$link              = get_sub_field('carousel_link');
 				?>
 
@@ -32,17 +38,11 @@ Template Name: Home Page
 			<?php endif; ?>
 
 		<!-- PRACTICE -->
-			<?php 
-				// vars
-				$heading = get_field('main_heading');
-				$blogHeading = get_field('blog_heading');
-			?>
-
+			
 			<div class="container work">				
 				<h2 class="main-heading"><?php echo $heading; ?></h2>
 				<ul class="gallery">
 				
-
 					<?php
 						// get all the pages from 'main' category
 						$work_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'work-types', 'posts_per_page' => 200 ) );

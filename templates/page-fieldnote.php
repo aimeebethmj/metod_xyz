@@ -37,7 +37,7 @@ Template Name: Fieldnote Page
 
 		<!-- FIELD NOTES -->
 			<div class="container blog">
-				<h2 class="main-heading"><?php echo $heading; ?></h2>
+				<h2 class="main-heading">Field notes</h2>
 				<div class="multiple-slider boxed-content">
 					<!-- include(locate_template('templates/fieldnotes.php')); -->
 					<?php get_template_part('templates/fieldnotes'); ?>
