@@ -28,47 +28,55 @@
 /* line 1, ../_sass/_typography.scss */
 body {
   font-family: 'DINPro-Regular', 'Helvetica', sans-serif;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* line 5, ../_sass/_typography.scss */
+/* line 8, ../_sass/_typography.scss */
 b, strong {
   font-family: 'DINPro-Bold';
 }
 
-/* line 9, ../_sass/_typography.scss */
+/* line 12, ../_sass/_typography.scss */
 h1 {
   font-size: 72px;
 }
 
-/* line 14, ../_sass/_typography.scss */
+/* line 17, ../_sass/_typography.scss */
 h2 {
   font-size: 48px;
 }
 
-/* line 19, ../_sass/_typography.scss */
+/* line 22, ../_sass/_typography.scss */
 h3 {
   font-size: 36px;
 }
 
-/* line 24, ../_sass/_typography.scss */
+/* line 27, ../_sass/_typography.scss */
 p {
   font-size: 24px;
 }
 
-/* line 31, ../_sass/_typography.scss */
+/* line 34, ../_sass/_typography.scss */
 .nav-bar .home a {
   font-size: 1.6rem;
 }
-/* line 41, ../_sass/_typography.scss */
+/* line 44, ../_sass/_typography.scss */
 .nav-bar nav li a {
   font-size: 1.6rem;
 }
 
-/* line 50, ../_sass/_typography.scss */
+/* line 53, ../_sass/_typography.scss */
 .slick-prev:before, .slick-next:before {
   font-family: 'DINPro-Regular';
   font-size: 5rem;
   font-weight: 200;
+}
+
+/* line 61, ../_sass/_typography.scss */
+a i.fa-2x {
+  font-size: 3rem;
 }
 
 /* line 12, ../_sass/_colours.scss */
@@ -112,44 +120,55 @@ ul.gallery a {
   outline: none;
 }
 
-/* line 62, ../_sass/_colours.scss */
+/* line 66, ../_sass/_colours.scss */
+#me a,
+#me .footerEmail {
+  color: #00B4FF;
+  text-decoration: none;
+}
+/* line 73, ../_sass/_colours.scss */
+#me a span.wantMore {
+  color: #000000;
+}
+
+/* line 80, ../_sass/_colours.scss */
 #footer-bar {
   background-color: #00B4FF;
 }
 
-/* line 72, ../_sass/_colours.scss */
+/* line 90, ../_sass/_colours.scss */
 nav li a {
   color: #000000;
 }
-/* line 76, ../_sass/_colours.scss */
+/* line 94, ../_sass/_colours.scss */
 nav li a:hover {
   color: #00B4FF;
 }
-/* line 80, ../_sass/_colours.scss */
+/* line 98, ../_sass/_colours.scss */
 nav li a:active {
   color: #00B4FF;
 }
 
-/* line 90, ../_sass/_colours.scss */
+/* line 108, ../_sass/_colours.scss */
 .slider h1 {
   color: #FFFFFF;
 }
-/* line 95, ../_sass/_colours.scss */
+/* line 113, ../_sass/_colours.scss */
 .slider .slick-slide:focus {
   outline: none;
 }
-/* line 108, ../_sass/_colours.scss */
+/* line 126, ../_sass/_colours.scss */
 .slider .slick-dots li button:hover:before, .slider .slick-dots li button:focus:before {
   opacity: 1;
 }
-/* line 113, ../_sass/_colours.scss */
+/* line 131, ../_sass/_colours.scss */
 .slider .slick-dots li button:before {
   color: #FFFFFF;
   opacity: 1;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-/* line 121, ../_sass/_colours.scss */
+/* line 139, ../_sass/_colours.scss */
 .slider .slick-dots li.slick-active button:before {
   color: #00B4FF;
   opacity: 1;
@@ -603,18 +622,8 @@ body {
   margin-bottom: 5rem;
 }
 
-/* line 82, ../_sass/_spacing.scss */
-.contact-links {
-  text-align: center;
-  margin-top: 3rem;
-}
-/* line 87, ../_sass/_spacing.scss */
-.contact-links p {
-  padding-right: 2rem;
-  padding-left: 2rem;
-}
-/* line 93, ../_sass/_spacing.scss */
-.contact-links a .fa-twitter {
+/* line 101, ../_sass/_spacing.scss */
+.footerEmail a {
   padding-left: 2rem;
 }
 
@@ -657,7 +666,7 @@ ul.gallery li a:hover {
 
 /* line 3, ../_sass/_footer.scss */
 #me img {
-  max-width: 100%;
+  max-width: 120%;
   transform: translateY(-10%);
   margin: auto;
   display: block;
@@ -665,7 +674,7 @@ ul.gallery li a:hover {
 
 /* line 12, ../_sass/_footer.scss */
 #footer-bar {
-  margin-top: 3rem;
+  margin-top: 4rem;
 }
 /* line 15, ../_sass/_footer.scss */
 #footer-bar p {
