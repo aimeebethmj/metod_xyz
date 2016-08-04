@@ -4,3 +4,4 @@ grunt/.sass-cache
 grunt/node_modules
 screenshot.png
 *.map
+main.css
