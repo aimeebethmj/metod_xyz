@@ -1,5 +1,8 @@
 body {
 	font-family: 'DINPro-Regular', 'Helvetica', sans-serif;
+	text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 b, strong {
@@ -53,4 +56,9 @@ p
     font-size: 5rem;
     font-weight: 200;
 
+}
+
+a i.fa-2x
+{
+	font-size: 3rem;
 }
