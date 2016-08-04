@@ -3,7 +3,7 @@
 	img
 	{
 		max-width: 100%;
-	    transform: translateY(-33%);
+	    transform: translateY(-10%);
 	    margin: auto;
 	    display: block;
 	}
@@ -15,17 +15,23 @@
 	p
 	{
 		text-align: center;
-		padding-top: 2rem;
-		padding-bottom: 2rem;
+		padding-top: 2.2rem;
+		padding-bottom: 2.2rem;
 		color: white;
 		margin: 0;
 	}
 }
 
-.contact-links
+.arrow
 {
 	a 
 	{
 		text-decoration: none;
+		font-size: 3rem;
 	}
+}
+
+.columns.me-blurb
+{
+	// margin-left: 0;
 }

@@ -56,6 +56,12 @@ p {
   font-size: 1.6rem;
 }
 
+.slick-prev:before, .slick-next:before {
+  font-family: 'DINPro-Regular';
+  font-size: 5rem;
+  font-weight: 200;
+}
+
 .nav-bar {
   background-color: rgba(255, 255, 255, 0.8);
 }
@@ -168,6 +174,7 @@ body {
   background-size: contain;
   width: 30%;
   float: left;
+  padding-right: 2rem;
 }
 
 #logo-link {
@@ -306,6 +313,7 @@ body {
 .slick-next:hover:before,
 .slick-next:focus:before {
   opacity: 1;
+  color: #00B4FF;
 }
 .slick-prev.slick-disabled:before,
 .slick-next.slick-disabled:before {
@@ -313,17 +321,15 @@ body {
 }
 
 .slick-prev:before, .slick-next:before {
-  font-family: "slick";
-  font-size: 20px;
   line-height: 1;
-  color: white;
+  color: #5FD1F9;
   opacity: 0.75;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-  left: -25px;
+  left: -56px;
 }
 [dir="rtl"] .slick-prev {
   left: auto;
@@ -416,10 +422,11 @@ body {
 }
 
 .slider .slick-next {
-  right: 50px;
+  right: 75px;
 }
 .slider .slick-prev {
-  left: 50px;
+  left: 40px;
+  z-index: 1;
 }
 
 .container {
@@ -539,7 +546,7 @@ ul.gallery li a:hover {
 
 #me img {
   max-width: 100%;
-  transform: translateY(-33%);
+  transform: translateY(-10%);
   margin: auto;
   display: block;
 }
@@ -549,14 +556,15 @@ ul.gallery li a:hover {
 }
 #footer-bar p {
   text-align: center;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
   color: white;
   margin: 0;
 }
 
-.contact-links a {
+.arrow a {
   text-decoration: none;
+  font-size: 3rem;
 }
 
 img :focus {
@@ -589,6 +597,38 @@ img :focus {
     margin-left: 15%;
     margin-right: 15%;
   }
+
+  .nav-bar .container .row {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
+@media (max-width: 549px) {
+  .logo {
+    width: 10%;
+  }
+
+  ul.gallery li {
+    width: 100%;
+    padding-bottom: 50%;
+  }
+
+  .hide-for-mobile {
+    display: none;
+  }
+}
+@media (max-width: 25rem) {
+  .logo {
+    width: 10%;
+  }
+
+  ul.gallery li {
+    padding-bottom: 66.66%;
+  }
+}
+.blog .boxed-content a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /*# sourceMappingURL=main.css.map */

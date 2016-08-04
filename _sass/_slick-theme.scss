@@ -77,6 +77,7 @@ $slick-opacity-not-active: 0.25 !default;
         color: transparent;
         &:before {
             opacity: $slick-opacity-on-hover;
+            color: $blue1;
         }
     }
     &.slick-disabled:before {
@@ -85,17 +86,17 @@ $slick-opacity-not-active: 0.25 !default;
 }
 
 .slick-prev:before, .slick-next:before {
-    font-family: $slick-font-family;
-    font-size: 20px;
+    // font-family: $slick-font-family;
+    // font-size: 20px;
     line-height: 1;
-    color: $slick-arrow-color;
+    color: $blue2;
     opacity: $slick-opacity-default;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 .slick-prev {
-    left: -25px;
+    left: -56px;
     [dir="rtl"] & {
         left: auto;
         right: -25px;
@@ -189,7 +190,6 @@ $slick-opacity-not-active: 0.25 !default;
 
 .multiple-slider
 {
-
     .column 
     {
         transition: .4s;
@@ -202,11 +202,12 @@ $slick-opacity-not-active: 0.25 !default;
 {
     .slick-next 
     {
-        right: 50px;
+        right: 75px;
     }
 
     .slick-prev 
     {
-        left: 50px;
+        left: 40px;
+        z-index: 1;
     }
 }

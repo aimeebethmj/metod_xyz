@@ -64,27 +64,33 @@ Template Name: Home Page
 			</div>
 
 		<!-- FIELD NOTES -->
-			<div class="container blog">
+			<div class="container blog ">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
-				<div class="multiple-slider boxed-content">
-					
-						<div class="one-half column">
-							<h3>123: Documentary Photography</h3>
-							<p>Here is just a series of links and comments from films and photography resources you eill most likely enjoy if you are even remotely into documentary photography or photography at large</p>
-						</div>
-						<div class="one-half column">
-							<h3>122: Nature gives more than it takes</h3>
-							<p>Here is just a series of links and comments from films and photography resources you eill most likely enjoy if you are even remotely into documentary photography or photography at large</p>
-						</div>
+				<div class="multiple-slider boxed-content hide-for-mobile">
+						
+					<?php
+						// get all the pages from 'main' category
+						$fieldnote_pages = get_posts( array( 'post_type' => 'page', 'order' => 'ASC', 'orderby' => 'menu_order', 'category_name' => 'fieldnote', 'posts_per_page' => 200 ) );
 
-						<div class="one-half column">
-							<h3>124: Documentary Photography</h3>
-							<p>Here is just a series of links and comments from films and photography resources you eill most likely enjoy if you are even remotely into documentary photography or photography at large</p>
-						</div>
-						<div class="one-half column">
-							<h3>122: Nature gives more than it takes</h3>
-							<p>Here is just a series of links and comments from films and photography resources you eill most likely enjoy if you are even remotely into documentary photography or photography at large</p>
-						</div>
+						foreach($fieldnote_pages as $fieldnote_page) // for each school within schools
+						{
+							
+							$fieldnote_URL = get_page_link($fieldnote_page->ID);
+							$fieldnote_name = $fieldnote_page->post_title;
+							$featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($fieldnote_page->ID), 'large' );
+							$slider_blurb = get_field('mini_blurb', 82);
+
+							if($fieldnote_page->ID != $post->ID):
+
+							echo '<div class="one-half column">
+							<a href="'. $fieldnote_URL .'"><h3>'. $fieldnote_name . '</h3>
+							<p>' . $slider_blurb . '</p></a>
+							</div>';
+
+							endif;
+						}
+
+					?>
 					
 				</div>
 			</div>
