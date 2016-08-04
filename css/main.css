@@ -328,7 +328,7 @@ body {
 }
 
 .slick-prev {
-  left: -56px;
+  left: -85px;
 }
 [dir="rtl"] .slick-prev {
   left: auto;
@@ -342,7 +342,7 @@ body {
 }
 
 .slick-next {
-  right: -25px;
+  right: -55px;
 }
 [dir="rtl"] .slick-next {
   left: -25px;
