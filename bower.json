@@ -23,6 +23,6 @@
     "skeleton-css": "~2.0.4",
     "jquery": "~2.1.4",
     "slick-carousel": "~1.5.8",
-    "font-awesome": "fontawesome#~4.5.0"
+    "font-awesome": "fontawesome#~4.6.3"
   }
 }
