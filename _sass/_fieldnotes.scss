@@ -1,0 +1,32 @@
+.blog .boxed-content a
+{
+	text-decoration: none;
+	color: $black;
+}
+
+.fieldnotes
+{
+  ul
+  {
+    list-style-type: none;
+
+    li 
+    {
+      &:nth-child(odd)
+      {
+        clear: both;
+        margin-left: 0;
+      }
+      
+      a 
+      {
+        text-decoration: none;
+      }
+
+      img
+      {
+        max-width: 100%;
+      }
+    }
+  }
+}

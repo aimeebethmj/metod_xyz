@@ -17,14 +17,10 @@ $white: #FFFFFF;
 	{
 		color: $black;
 
-		&:hover
-	    {
-	        color: $blue1;
-	    }
-	    &:active
-	    {
-	        color: $blue1;
-	    }
+		&:hover, &:active
+    {
+      color: $blue1;
+    }
 	}
 	
 }
@@ -37,6 +33,16 @@ ul.gallery
 		color: white;
 	}
 }
+
+.fieldnotes ul li a
+{
+	color: inherit;
+
+	&:hover, &:active
+  {
+    color: $blue1;
+  }
+} 
 
 .blog
 {
