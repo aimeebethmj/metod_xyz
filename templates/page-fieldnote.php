@@ -40,7 +40,7 @@ Template Name: Fieldnote Page
 				<h2 class="main-heading">Field notes</h2>
 				<div class="multiple-slider boxed-content">
 					<!-- include(locate_template('templates/fieldnotes.php')); -->
-					<?php get_template_part('templates/fieldnotes'); ?>
+					<?php get_template_part('templates/list-fieldnotes'); ?>
 				</div>
 			</div>
 
