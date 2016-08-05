@@ -65,6 +65,24 @@ ul.gallery
 	}    
 }
 
+
+#me
+{
+
+	a,
+	.footerEmail
+	{
+		color: $blue1;
+		text-decoration: none;
+	}
+
+	a span.wantMore
+	{
+		color: $black;
+	}
+
+}
+
 #footer-bar
 {
 	background-color: $blue1;
