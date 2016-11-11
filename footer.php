@@ -53,7 +53,7 @@
                 $(document).ready(function()
                 {
                     $('.slider').slick({
-                        dots: true,
+                        dots: false,
                         arrows: true,
                         autoplay: false,
                         autoplaySpeed: 8000, 
