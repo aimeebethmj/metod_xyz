@@ -9,6 +9,8 @@
 
 		<?php // wp_head(); // wordpress head functions ?>
 
+		<link rel="icon" type="image/x-icon" href="<?php theActiveThemeDirectory(); ?>favicon.ico">
+
 		<link href="<?php theHTML5BoilerplateDirectory(); ?>css/normalize.css" rel="stylesheet">
 		<link href="<?php theSkeletonDirectory(); ?>css/skeleton.css" rel="stylesheet">
 		<link href="<?php theActiveThemeDirectory(); ?>css/main.css" rel="stylesheet">
