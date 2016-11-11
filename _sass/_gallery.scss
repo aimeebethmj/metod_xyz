@@ -8,12 +8,12 @@ ul.gallery {
 		position: relative;
 		
 		width: 50%;
-		// trick to make the li 4:3 (50 : 37.5)
+		// trick to make the li 3:2 (50 : 33.33333)
 		height: 0;
-	    padding-bottom: 37.5%;
+	  padding-bottom: 33.33333%;
 	    
-	    background-size: cover;
-        background-position: center;
+	  background-size: cover;
+    background-position: center;
 
 		img {
 			max-width: 100%;
