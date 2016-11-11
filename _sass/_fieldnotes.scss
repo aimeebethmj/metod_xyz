@@ -12,10 +12,18 @@
 
     li 
     {
+      margin-bottom: 100px;
+      
       &:nth-child(odd)
       {
         clear: both;
         margin-left: 0;
+        padding-right: 10px;
+      }
+
+      &:nth-child(even)
+      {
+        padding-left: 10px;
       }
       
       a 
@@ -23,9 +31,15 @@
         text-decoration: none;
       }
 
+      h3 
+      {
+        margin-top: 15px;
+      }
+
       img
       {
         max-width: 100%;
+        vertical-align: top;
       }
     }
   }
