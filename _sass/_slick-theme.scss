@@ -204,32 +204,48 @@ $slick-opacity-not-active: 0.25 !default;
     }
 }
 
-.slider
+.slider,
+.multiple-slider
 {
-    .slick-prev,
-    .slick-next
-    {
-        z-index: 1;
-    }
-
-    .slick-next
-    {
-        right: 1.9rem;
-    }
-
-    .slick-prev
-    {
-        left: 1.7rem;
-    }
+  .slick-prev,
+  .slick-next
+  {
+    z-index: 1;
+  }
 }
 
+.slider
+{
+  .slick-prev
+  {
+    left: 1.7rem;
+  }
+  .slick-next
+  {
+    right: 1.9rem;
+  }
+}
+
+.multiple-slider
+{
+  .slick-prev
+  {
+    left: calc(1.7rem - 12.5%);
+  }
+  .slick-next
+  {
+    right: calc(1.9rem - 12.5%);
+  }
+}
+
+/*
 .fieldnoteSlideH2
 {
    overflow: hidden;
    text-overflow: ellipsis;
    display: -webkit-box;
    -webkit-box-orient: vertical;
-   -webkit-line-clamp: 2; /* number of lines to show */
-   line-height: 1.25;        /* fallback */
-   max-height: 1.25*2;       /* fallback */
-}
+   -webkit-line-clamp: 2;     // number of lines to show
+   line-height: 1.25;         // fallback
+   max-height: 1.25*2;        // fallback
+}*/
