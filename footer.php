@@ -20,10 +20,12 @@
                 <div class="ten columns me-blurb">
                     <p><?php echo $meBlurb; ?></p>
                     <p class="footerEmail"><?php echo $email; ?>
-                        <a href="<?php echo $instaLink; ?>" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
-                        <a href="<?php echo $twitLink; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
-                        <a href="<?php echo get_page_link(15); ?>"><span class="wantMore"><?php echo $wantMore; ?></span> →</a>
-                    </p>
+                      <a href="<?php echo $instaLink; ?>" target="_blank"><i class="fa fa-instagram fa-2x"></i></a>
+                      <a href="<?php echo $twitLink; ?>" target="_blank"><i class="fa fa-twitter fa-2x"></i></a>
+										</p>
+                    <p class="wantMore"><?php echo $wantMore; ?>
+											<a href="<?php echo get_page_link(15); ?>">→</a>
+										</p>
                 </div>
             </div>
             <!-- <div class="boxed-content">
