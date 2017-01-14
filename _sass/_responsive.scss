@@ -58,6 +58,30 @@
 		margin-right: 0;
 		margin-left: 0;
 	}
+
+	.slider
+	{
+	  .slick-prev
+	  {
+	    left: 1.7rem;
+	  }
+	  .slick-next
+	  {
+	    right: 1.9rem;
+	  }
+	}
+
+	.multiple-slider
+	{
+	  .slick-prev
+	  {
+	    left: calc(1.7rem - 12.5%);
+	  }
+	  .slick-next
+	  {
+	    right: calc(1.9rem - 12.5%);
+	  }
+	}
 }
 
 @media (max-width: 549px)
@@ -72,9 +96,7 @@
 	{
 		display: none;
 	}
-
 }
-
 
 @media (max-width: 25rem)
 {
