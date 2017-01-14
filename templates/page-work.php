@@ -22,9 +22,9 @@ Template Name: Work Page
 				?>
 
 					<div class="row">
-						<img class="u-max-full-width" src="<?php echo $image['url']; ?>">
 						<a href="<?php echo $link; ?>">
-							<h2 class="low-centered"><?php echo $headline; ?></h2>
+						<img class="u-max-full-width" src="<?php echo $image['url']; ?>">
+						<h2 class="low-centered"><?php echo $headline; ?></h2>
 						</a>
 					</div>
 					
