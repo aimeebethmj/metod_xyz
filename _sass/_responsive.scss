@@ -90,6 +90,18 @@
 	  {
 	    right: calc(0.8rem - 12.5%);
 	  }
+		.column
+		{
+			a
+			{
+				padding: 1rem 2rem;
+			}
+			
+			&:hover
+			{
+				background: transparent;
+			}
+		}
 	}
 }
 

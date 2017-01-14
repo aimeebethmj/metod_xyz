@@ -1,4 +1,4 @@
-		<?php 
+		<?php
             // vars
             $meHeading = get_field('me_heading', 15);
             $profilePic = get_field('footer_profile_pic', 15);
@@ -56,21 +56,30 @@
                         dots: false,
                         arrows: true,
                         autoplay: false,
-                        autoplaySpeed: 8000, 
-                        speed: 300, 
+                        autoplaySpeed: 8000,
+                        speed: 300,
                         fade: true,
-                        infinite: true  
+                        infinite: true
                     });
 
                     $('.multiple-slider').slick({
                         autoplay: false,
-                        autoplaySpeed: 8000, 
-                        speed: 300, 
+                        autoplaySpeed: 8000,
+                        speed: 300,
                         arrows: true,
                         dots: false,
                         infinite: true,
                         slidesToShow: 2,
-                        slidesToScroll: 1
+                        slidesToScroll: 1,
+												responsive:
+												[
+													{
+											      breakpoint: 960,
+											      settings: {
+											        slidesToShow: 1
+											      }
+											    }
+												]
                     });
                 });
             </script>

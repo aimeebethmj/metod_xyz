@@ -10,7 +10,7 @@ Template Name: Home Page
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<?php 
+			<?php
 				// vars
 				$heading = get_field('main_heading');
 				$blogHeading = get_field('blog_heading');
@@ -20,7 +20,7 @@ Template Name: Home Page
 		  <?php if( have_rows('carousel') ): ?>
 
 		    <div class="container slider">
-				<?php while( have_rows('carousel') ): the_row(); 
+				<?php while( have_rows('carousel') ): the_row();
 					// vars
 					$image             = get_sub_field('image');
 			    $headline          = get_sub_field('headline');
@@ -32,23 +32,23 @@ Template Name: Home Page
 						<h1 class="low-centered"><?php echo $headline; ?></h1>
 						</a>
 					</div>
-					
+
 				<?php endwhile; ?>
 				</div>
 
 			<?php endif; ?>
 
 		<!-- PRACTICE -->
-			
-			<div class="container work">				
+
+			<div class="container work">
 				<h2 class="main-heading"><?php echo $heading; ?></h2>
-				<?php get_template_part('templates/list-work-types'); ?>		
+				<?php get_template_part('templates/list-work-types'); ?>
 			</div>
 
 		<!-- FIELD NOTES -->
-			<div class="container blog ">
+			<div class="blog container">
 				<h2 class="main-heading"><?php echo $blogHeading; ?></h2>
-				<div class="multiple-slider boxed-content hide-for-mobile">
+				<div class="multiple-slider boxed-content">
 					<?php get_template_part('templates/list-fieldnotes'); ?>
 				</div>
 			</div>
