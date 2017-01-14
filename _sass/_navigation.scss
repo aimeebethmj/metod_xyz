@@ -45,7 +45,7 @@ body
       {
         transform: rotateZ(45deg);
         // + ×
-        right: -2px;
+        right: -7px;
         top: 1px;
       }
     }
@@ -56,7 +56,7 @@ body
     display: none;
     position: fixed;
     top: 0;
-    right: 0;
+    right: -5px;
     cursor: pointer;
     padding: 2.5rem;
     margin-bottom: 0;
@@ -76,12 +76,13 @@ body
     {
       margin-bottom: 0;
       display: inline-block;
+      line-height: 1;
 
       a
       {
         // padding: 2rem 1rem;
         padding-left: 2rem;
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
       }
     }
   }

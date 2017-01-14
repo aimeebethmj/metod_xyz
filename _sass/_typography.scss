@@ -1,8 +1,9 @@
 body {
 	font-family: 'DINPro-Regular', 'Helvetica', sans-serif;
 	text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+	// this doesn't work well with DIN
+  // -webkit-font-smoothing: antialiased;
+  // -moz-osx-font-smoothing: grayscale;
 }
 
 b, strong {
@@ -50,7 +51,7 @@ p, li, ul
 
 }
 
-.slick-prev:before, .slick-next:before 
+.slick-prev:before, .slick-next:before
 {
     font-family: 'DINPro-Regular';
     font-size: 3.4rem;

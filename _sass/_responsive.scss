@@ -16,9 +16,12 @@
 		width: 100%;
 	}
 
-	img
+	.text-content img
 	{
+		// preventing WP from resizing images arbitrarily
 		max-width: 100% !important;
+		width: auto !important;
+	    height: auto !important;
 	}
 }
 
@@ -35,6 +38,7 @@
 			li
 			{
 				display: block;
+				line-height: inherit;
 
 				a
 				{
@@ -62,15 +66,34 @@
 		margin-right: 0;
 		margin-left: 0;
 	}
+
+	.slider
+	{
+	  .slick-prev
+	  {
+	    left: 1.5rem;
+	  }
+	  .slick-next
+	  {
+	    right: 0.8rem;
+	  }
+	}
+
+	.multiple-slider
+	{
+	  .slick-prev
+	  {
+	    left: calc(1.5rem - 12.5%);
+	  }
+	  .slick-next
+	  {
+	    right: calc(0.8rem - 12.5%);
+	  }
+	}
 }
 
 @media (max-width: 549px)
 {
-	.logo
-	{
-		width: 10%;
-	}
-
 	ul.gallery li
 	{
 		width: 100%;
@@ -81,23 +104,12 @@
 	{
 		display: none;
 	}
-
 }
-
 
 @media (max-width: 25rem)
 {
-
-
-	.logo
-	{
-		width: 10%;
-	}
-
 	ul.gallery li
 	{
 		padding-bottom: 66.66%;
 	}
-
-
 }
