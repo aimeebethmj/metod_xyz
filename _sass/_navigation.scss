@@ -11,9 +11,9 @@ body
   width: 100%;
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
-  
+
   box-sizing: border-box;
-  
+
   .container
   {
     .row
@@ -21,16 +21,52 @@ body
       margin-right: 10%;
       margin-left: 10%;
     }
-
   }
 
-  a {
+  a
+  {
     text-decoration: none;
+  }
+
+  input.trigger
+  {
+    position: absolute;
+    top: -9999rem;
+    left: -9999rem;
+
+    &:checked
+    {
+      & ~ ul
+      {
+        display:block !important;
+      }
+
+      & ~ label
+      {
+        transform: rotateZ(45deg);
+        // + ×
+        right: -2px;
+        top: 1px;
+      }
+    }
+  }
+
+  .hamburger
+  {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    padding: 2.5rem;
+    margin-bottom: 0;
+    font-size: 140%;
+    line-height: 1;
   }
 
   nav
   {
-    ul 
+    ul
     {
       list-style: none;
       margin-bottom: 0;
@@ -48,14 +84,6 @@ body
         font-size: 1.6rem;
       }
     }
-  }
-
-  .hamburger
-  {
-    display: none;
-    position: absolute;
-    // top: 2rem;
-    right: 0;
   }
 }
 

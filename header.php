@@ -36,6 +36,8 @@
 						</div>
 					</div>
 					<nav class="nine columns">
+						<input class="trigger" type="checkbox" id="nav-button">
+          	<label class="hamburger" for="nav-button" onclick>+</label>
 						<ul class="u-pull-right">
 							<?php
 								// get all the pages from 'main' category
@@ -43,17 +45,18 @@
 
 								foreach($main_pages as $main_page) // for each school within schools
 								{
-									
+
 									$main_URL = get_page_link($main_page->ID);
 									$main_name = $main_page->post_title;
 									// showMeTheGoods($school_name);
 									echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
-								}	
+								}
 							?>
 				            <li><a href="#me">Me</a></li>
-				        </ul>
-			        </nav>
-					<a class="hamburger">+</a>
+				    </ul>
+			    </nav>
+
+					<!-- <a class="">+</a> -->
 				</div>
 			</div>
 		</div>
