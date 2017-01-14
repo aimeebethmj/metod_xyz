@@ -137,11 +137,11 @@ $slick-opacity-not-active: 0.25 !default;
 {
   .slick-prev
   {
-    left: 3.7rem;
+    left: 3.5rem;
   }
   .slick-next
   {
-    right: 3.9rem;
+    right: 2.8rem;
   }
 }
 
@@ -149,11 +149,11 @@ $slick-opacity-not-active: 0.25 !default;
 {
   .slick-prev
   {
-    left: calc(3.7rem - 12.5%);
+    left: calc(3.5rem - 12.5%);
   }
   .slick-next
   {
-    right: calc(3.9rem - 12.5%);
+    right: calc(2.8rem - 12.5%);
   }
 }
 
