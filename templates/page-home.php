@@ -28,8 +28,9 @@ Template Name: Home Page
 				?>
 
 					<div class="row">
-						<img class="u-max-full-width" src="<?php echo $image['url']; ?>">
-						<a href="<?php echo $link; ?>"><h1 class="low-centered"><?php echo $headline; ?></h1></a>
+						<a href="<?php echo $link; ?>"><img class="u-max-full-width" src="<?php echo $image['url']; ?>">
+						<h1 class="low-centered"><?php echo $headline; ?></h1>
+						</a>
 					</div>
 					
 				<?php endwhile; ?>
