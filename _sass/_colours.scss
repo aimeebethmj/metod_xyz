@@ -8,6 +8,15 @@ $blue3: #95E0FB;
 $paleBlue: #F4FCFF;
 $white: #FFFFFF;
 
+a 
+{
+	color: $black;
+	text-decoration: underline;
+	&:hover, &:active
+    {
+      color: $teal;
+    }
+}
 
 .nav-bar
 {
@@ -19,9 +28,9 @@ $white: #FFFFFF;
 		color: $black;
 
 		&:hover, &:active
-    {
-      color: $blue1;
-    }
+	    {
+	      color: $blue1;
+	    }
 	}
 }
 
@@ -41,6 +50,11 @@ ul.gallery
 	&:hover, &:active
   {
     color: $blue1;
+
+    &:hover, &:active
+    {
+      color: $blue2;
+    }
   }
 }
 
@@ -73,6 +87,11 @@ ul.gallery
 	{
 		color: $blue1;
 		text-decoration: none;
+
+		&:hover, &:active
+	    {
+	      color: $blue2;
+	    }
 	}
 
 	a span.wantMore
