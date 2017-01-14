@@ -9,11 +9,12 @@ $paleBlue: #F4FCFF;
 $white: #FFFFFF;
 
 
-.nav-bar 
+.nav-bar
 {
 	background-color: rgba($white, 0.8);
 
-	a 
+	a,
+	.hamburger
 	{
 		color: $black;
 
@@ -22,12 +23,11 @@ $white: #FFFFFF;
       color: $blue1;
     }
 	}
-	
 }
 
-ul.gallery 
-{	
-	a 
+ul.gallery
+{
+	a
 	{
 		background-color: rgba($blue1, .7);
 		color: white;
@@ -42,7 +42,7 @@ ul.gallery
   {
     color: $blue1;
   }
-} 
+}
 
 .blog
 {
@@ -62,9 +62,8 @@ ul.gallery
 	    {
 	    	outline: none;
 	    }
-	}    
+	}
 }
-
 
 #me
 {
@@ -88,53 +87,32 @@ ul.gallery
 	background-color: $blue1;
 }
 
-nav
-{
-	
-	li
-	{
-	  a
-	  {
-	  	color: $black;
-
-	  	&:hover
-	    {
-	        color: $blue1;
-	    }
-	    &:active
-	    {
-	        color: $blue1;
-	    }
-	  }
-	}
-}
-
-.slider 
+.slider
 {
 	h1
 	{
 		color: $white;
 	}
-	
+
 	.slick-slide:focus
 	{
 		outline: none;
 	}
 
-	.slick-dots 
-	{    
-	    li 
+	.slick-dots
+	{
+	    li
 	    {
-	        button 
+	        button
 	        {
-	            &:hover, &:focus 
+	            &:hover, &:focus
 	            {
-	                &:before 
+	                &:before
 	                {
 	                    opacity: 1;
 	                }
 	            }
-	            &:before 
+	            &:before
 	            {
 	                color: $white;
 	                opacity: 1;

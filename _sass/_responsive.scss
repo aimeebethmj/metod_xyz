@@ -1,11 +1,11 @@
-@media (max-width: 120rem) 
+@media (max-width: 120rem)
 {
 	.container
 	{
 		width: 100%;
 	}
 
-	.nav-bar 
+	.nav-bar
 	{
 		padding-left: 2rem;
 		padding-right: 2rem;
@@ -17,24 +17,34 @@
 	}
 }
 
-@media (max-width: 60rem) 
+@media (max-width: 60rem)
 {
 	.nav-bar
 	{
-		nav 
+		nav ul
 		{
 			display: none;
+	    float: none;
+			margin-top: 3.5rem;
+
+			li
+			{
+				display: block;
+
+				a
+				{
+					display: block;
+					text-align: right;
+					padding-left: 0;
+				}
+			}
 		}
 
 		.hamburger
 		{
 			display: block;
-	    cursor: pointer;
-	    padding: 2.5rem;
-	    position: fixed;
-	    top: 0;
 		}
-	}	
+	}
 
 	.text-content
 	{
@@ -47,19 +57,16 @@
 		margin-right: 0;
 		margin-left: 0;
 	}
-
-	
 }
 
 @media (max-width: 549px)
 {
-
 	.logo
 	{
 		width: 10%;
 	}
 
-	ul.gallery li 
+	ul.gallery li
 	{
 		width: 100%;
 		padding-bottom: 50%;
@@ -74,15 +81,15 @@
 
 
 @media (max-width: 25rem)
-{		
-	
+{
+
 
 	.logo
 	{
 		width: 10%;
 	}
 
-	ul.gallery li 
+	ul.gallery li
 	{
 		padding-bottom: 66.66%;
 	}
