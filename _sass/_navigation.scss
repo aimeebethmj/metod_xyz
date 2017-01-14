@@ -1,6 +1,7 @@
 body
 {
   padding-top: 7.5rem;
+  // padding-top: 8.5rem;
 }
 
 .nav-bar
@@ -76,12 +77,13 @@ body
     {
       margin-bottom: 0;
       display: inline-block;
+      line-height: 1;
 
       a
       {
         // padding: 2rem 1rem;
         padding-left: 2rem;
-        font-size: 1.6rem;
+        // font-size: 1.6rem;
       }
     }
   }
