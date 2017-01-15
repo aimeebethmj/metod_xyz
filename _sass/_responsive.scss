@@ -96,7 +96,7 @@
 			{
 				padding: 1rem 2rem;
 			}
-			
+
 			&:hover
 			{
 				background: transparent;
@@ -107,22 +107,14 @@
 
 @media (max-width: 549px)
 {
-	ul.gallery li
-	{
-		width: 100%;
-		padding-bottom: 50%;
-	}
-
 	.hide-for-mobile
 	{
 		display: none;
 	}
-}
 
-@media (max-width: 25rem)
-{
 	ul.gallery li
 	{
+		width: 100%;
 		padding-bottom: 66.66%;
 	}
 }
