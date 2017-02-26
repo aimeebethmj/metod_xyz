@@ -8,14 +8,14 @@ $blue3: #95E0FB;
 $paleBlue: #F4FCFF;
 $white: #FFFFFF;
 
-a 
+a
 {
 	color: $black;
 	text-decoration: underline;
 	&:hover, &:active
-    {
-      color: $teal;
-    }
+	{
+	  color: $teal;
+	}
 }
 
 .nav-bar
@@ -28,9 +28,9 @@ a
 		color: $black;
 
 		&:hover, &:active
-	    {
-	      color: $blue1;
-	    }
+		{
+		  color: $blue1;
+		}
 	}
 }
 

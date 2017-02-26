@@ -20,16 +20,27 @@ Template Name: Home Page
 		  <?php if( have_rows('carousel') ): ?>
 
 		    <div class="container slider">
-				<?php while( have_rows('carousel') ): the_row();
+				<?php
+					$count = 0;
+					while( have_rows('carousel') ): the_row();
 					// vars
 					$image             = get_sub_field('image');
-			    $headline          = get_sub_field('headline');
+					$headline          = get_sub_field('headline');
 					$link              = get_sub_field('carousel_link');
+					$id                = 'carousel-' . $count;
+					// update count
+					$count++;
 				?>
 
 					<div class="row">
+						<input class="trigger" type="checkbox" id="<?php echo $id; ?>">
+						<label class="hamburger" for="<?php echo $id; ?>" onclick>+</label>
 						<a href="<?php echo $link; ?>"><img class="u-max-full-width" src="<?php echo $image['url']; ?>">
-						<h1 class="low-centered"><?php echo $headline; ?></h1>
+							<div class="info">
+								<h2><?php echo $headline; ?></h2>
+								<p><?php echo $blurb; ?></p>
+							</div>
+							<!-- <h1 class="low-centered"><?php echo $headline; ?></h1> -->
 						</a>
 					</div>
 

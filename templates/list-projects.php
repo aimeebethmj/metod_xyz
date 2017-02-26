@@ -13,16 +13,16 @@
 
     foreach($project_pages as $project_page)
     {
-
-      $work_URL = get_page_link($project_page->ID);
-      $work_name = $project_page->post_title;
+      $project_URL = get_page_link($project_page->ID);
+      $project_name = $project_page->post_title;
+      $project_slug = $project_page->post_name;
       $featured_image = wp_get_attachment_image_src( get_post_thumbnail_id($project_page->ID), 'large' );
 
-      // consoleLog($featured_image);
-
       echo '<li style="background-image:url(' . $featured_image[0] .');">
-              <a href="' . $work_URL . '">
-                <h2 class="centered">' . $work_name . '</h2>
+              <input class="trigger" type="checkbox" id="' . $project_slug . '">
+              <label class="hamburger" for="' . $project_slug . '" onclick>+</label>
+              <a href="' . $project_URL . '">
+                <h2 class="centered">' . $project_name . '</h2>
               </a>
             </li>';
     }

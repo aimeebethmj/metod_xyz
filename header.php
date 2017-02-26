@@ -37,7 +37,7 @@
 					</div>
 					<nav class="nine columns">
 						<input class="trigger" type="checkbox" id="nav-button">
-          	<label class="hamburger" for="nav-button" onclick>+</label>
+						<label class="hamburger" for="nav-button" onclick>+</label>
 						<ul class="u-pull-right">
 							<?php
 								// get all the pages from 'main' category
@@ -52,9 +52,9 @@
 									echo '<li><a href="' . $main_URL . '">' . $main_name . '</a></li>';
 								}
 							?>
-				            <li><a href="#me">Me</a></li>
-				    </ul>
-			    </nav>
+							<li><a href="#me">Me</a></li>
+						</ul>
+					</nav>
 
 					<!-- <a class="">+</a> -->
 				</div>

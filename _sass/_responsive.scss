@@ -108,6 +108,16 @@
 			}
 		}
 	}
+
+	.gallery,
+	.slider
+	{
+		.hamburger
+		{
+			display: block;
+		}
+	}
+
 }
 
 // @media (max-width: 549px)
