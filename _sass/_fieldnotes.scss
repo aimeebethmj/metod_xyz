@@ -10,28 +10,28 @@
   {
     list-style-type: none;
 
-    li 
+    li
     {
       margin-bottom: 7rem;
-      
+
       &:nth-child(odd)
       {
         clear: both;
         margin-left: 0;
-        padding-right: 10px;
+        // padding-right: 10px;
       }
 
       &:nth-child(even)
       {
-        padding-left: 10px;
+        // padding-left: 10px;
       }
-      
-      a 
+
+      a
       {
         text-decoration: none;
       }
 
-      h3 
+      h3
       {
         margin-top: 15px;
       }

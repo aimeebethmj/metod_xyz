@@ -24,7 +24,7 @@
   transform: translateY(-50%);
   width: 100%;
 }
-.low-centered 
+.low-centered
 {
   position: absolute;
   top: 70%;
@@ -64,8 +64,10 @@
 
 .boxed-content
 {
-  margin-left: 10%;
-  margin-right: 10%;
+  // margin-left: 10%;
+  // margin-right: 10%;
+  margin-left: 2rem;
+  margin-right: 2rem;
 }
 
 .text-content

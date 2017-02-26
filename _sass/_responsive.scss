@@ -1,4 +1,4 @@
-@media (max-width: 120rem)
+@media (max-width: 1200px)
 {
 	.container
 	{
@@ -21,18 +21,18 @@
 		// preventing WP from resizing images arbitrarily
 		max-width: 100% !important;
 		width: auto !important;
-	    height: auto !important;
+		height: auto !important;
 	}
 }
 
-@media (max-width: 60rem)
+@media (max-width: 800px)
 {
 	.nav-bar
 	{
 		nav ul
 		{
 			display: none;
-	    float: none;
+			float: none;
 			margin-top: 3.5rem;
 			line-height: inherit;
 
@@ -58,8 +58,10 @@
 
 	.text-content
 	{
-	  margin-left: 15%;
-	  margin-right: 15%;
+		// margin-left: 15%;
+		// margin-right: 15%;
+		margin-left: 2rem;
+		margin-right: 2rem;
 	}
 
 	.nav-bar .container .row
@@ -70,31 +72,34 @@
 
 	.slider
 	{
-	  .slick-prev
-	  {
-	    left: 2rem;
-	  }
-	  .slick-next
-	  {
-	    right: 2rem;
-	  }
+		.slick-prev
+		{
+			left: 2rem;
+		}
+		.slick-next
+		{
+			right: 2rem;
+		}
 	}
 
 	.multiple-slider
 	{
-	  .slick-prev
-	  {
-	    left: calc(2rem - 12.5%);
-	  }
-	  .slick-next
-	  {
-	    right: calc(2rem - 12.5%);
-	  }
+		.slick-prev
+		{
+			// left: calc(2rem - 12.5%);
+			left: 0;
+		}
+		.slick-next
+		{
+			// right: calc(2rem - 12.5%);
+			right: 0;
+		}
 		.column
 		{
 			a
 			{
-				padding: 1rem 2rem;
+				// padding: 1rem 2rem;
+				padding: 1rem 0;
 			}
 
 			&:hover
@@ -105,8 +110,14 @@
 	}
 }
 
-@media (max-width: 549px)
+// @media (max-width: 549px)
+@media (max-width: 599px)
 {
+	.main-heading
+	{
+		padding: 9rem 0 2rem;
+	}
+
 	.hide-for-mobile
 	{
 		display: none;

@@ -1,33 +1,71 @@
+// HTML FONT SIZE IN %
+// SCALING IT DOWN WITH MEDIA QUERIES
+// THEN USING REMS TO GET EVERYTHING SCALED ACCORDING TO THE HTML SIZE
+html
+{
+	font-size: 62.5%; // 10px (16px is the default)
+}
+
+@media (max-width: 1200px)
+{
+	html
+	{
+		font-size: 56.25%; // 9px
+	}
+}
+
+@media (max-width: 800px)
+{
+	html
+	{
+		font-size: 50%; // 8px
+	}
+}
+
 body {
 	font-family: 'DINPro-Regular', 'Helvetica', sans-serif;
 	text-rendering: optimizeLegibility;
 	// this doesn't work well with DIN
-  // -webkit-font-smoothing: antialiased;
-  // -moz-osx-font-smoothing: grayscale;
+	// -webkit-font-smoothing: antialiased;
+	// -moz-osx-font-smoothing: grayscale;
 }
 
-b, strong {
+b, strong
+{
 	font-family: 'DINPro-Bold';
 }
 
 h1
 {
-	font-size: 66px;
+	font-size: 6.6rem;
 }
 
 h2
 {
-	font-size: 48px;
+	font-size: 4.8rem;
 }
 
 h3
 {
-	font-size: 34px;
+	font-size: 3.4rem;
+}
+
+@media (max-width: 800px)
+{
+	h1, h2
+	{
+		font-size: 4rem;
+	}
+
+	h3
+	{
+		font-size: 3rem;
+	}
 }
 
 p, li, ul
 {
-	font-size: 22px;
+	font-size: 2rem;
 }
 
 .nav-bar
@@ -42,10 +80,10 @@ p, li, ul
 
 		li
 		{
-		  a
-		  {
-		  	font-size: 1.6rem;
-		  }
+			a
+			{
+				font-size: 1.6rem;
+			}
 		}
 	}
 
@@ -53,10 +91,9 @@ p, li, ul
 
 .slick-prev:before, .slick-next:before
 {
-    font-family: 'DINPro-Regular';
-    font-size: 3.4rem;
-    font-weight: 200;
-
+	font-family: 'DINPro-Regular';
+	font-size: 3.4rem;
+	font-weight: 200;
 }
 
 a i.fa-2x
