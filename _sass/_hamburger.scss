@@ -59,8 +59,6 @@
 		cursor: pointer;
 		padding: 2.75rem 3.5rem 3.25rem 2.5rem;
 		font-size: 16px;
-		background-color: rgba($blue1, .4);
-		color: white;
 		border-radius: 50%;
 		line-height: 0;
 		width: 0;
@@ -69,7 +67,7 @@
     &:hover,
     &:active
     {
-      background-color: $blue1;
+      // background-color: $blue1;
     }
 	}
 }
@@ -80,6 +78,12 @@
 	{
 		opacity: 1;
 	}
+
+  .hamburger
+	{
+    background-color: rgba($blue1, .4);
+		color: $white;
+  }
 }
 
 .slider
@@ -88,4 +92,10 @@
 	{
 		opacity: 1;
 	}
+
+  .hamburger
+  {
+    background-color: rgba($white, .4);
+    color: $black;
+  }
 }
